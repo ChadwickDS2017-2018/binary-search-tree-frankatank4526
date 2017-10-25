@@ -1,6 +1,9 @@
 package config;
 
-import implementations.TreeNode;
+
+import implementations.BinaryTreeMeme;
+import implementations.UtilityMemes;
+//import implementations.LinkedTree;
 import structures.BinarySearchTree;
 import structures.BinaryTreeNode;
 import structures.BinaryTreeUtility;
@@ -20,11 +23,11 @@ public class Configuration {
 	
 
 	public static <T> BinaryTreeNode<T> createBinaryTreeNode(BinaryTreeNode<T> left, T elem, BinaryTreeNode<T> right){
-		return new TreeNode();
+		return new BinaryTreeMeme(left, elem, right) ;
 	}
 	
 	public static BinaryTreeUtility createBinaryTreeUtility(){
-		return null;
+		return new UtilityMemes();
 	}
 	
 	public static <T extends Comparable<? super T>> BinarySearchTree<T> createBinarySearchTree(){

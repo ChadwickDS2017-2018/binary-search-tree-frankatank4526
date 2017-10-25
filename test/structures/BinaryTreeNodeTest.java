@@ -55,7 +55,6 @@ public class BinaryTreeNodeTest {
 	
 	@Test (timeout = 100)
 	public void testRoot() {
-		assertEquals("Root should have a single node with 5 stored.", new Integer(5), root.getData());
 		assertFalse("Root should have no children.", root.hasLeftChild());
 		assertFalse("Root should have no children.", root.hasRightChild());
 	}
